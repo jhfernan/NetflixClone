@@ -6,16 +6,96 @@
 //
 import SwiftUI
 
-let exampleMovie1 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/200/300")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2019, rating: "PG-13")
-let exampleMovie2 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/200/300/")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2019, rating: "R")
-let exampleMovie3 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/200/301")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2021, rating: "TV-MA")
-let exampleMovie4 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/201/300")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2020, rating: "TV-MA")
-let exampleMovie5 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/201/301")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2021, rating: "PG-13", promotionalHeadline: "Sequel to be Released Next Year")
-let exampleMovie6 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/200/302")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2019, rating: "PG-13")
-let exampleMovie7 = Movie(id: UUID().uuidString, name: "Dark", thumbnailURL: URL(string: "https://picsum.photos/202/300")!, categories: ["Dystopian", "Exciting", "Sci Fi"], year: 2019, rating: "R", numberOfSeasons: 3, promotionalHeadline: "Watch Season 3 Now")
+let exampleMovie1 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2019,
+    rating: "PG-13",
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
+
+let exampleMovie2 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2019,
+    rating: "R",
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
+
+let exampleMovie3 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2021,
+    rating: "TV-MA",
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
+
+let exampleMovie4 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/201/300")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2020,
+    rating: "TV-MA",
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
+
+let exampleMovie5 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/201/301")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2021,
+    rating: "PG-13",
+    numberOfSeasons: 2,
+    currentEpisode: exampleEpisodeInfo1,
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
+
+let exampleMovie6 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2019,
+    rating: "PG-13",
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
+
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/202/300")!,
+    categories: ["Dystopian", "Exciting", "Sci Fi"],
+    year: 2019, rating: "R",
+    numberOfSeasons: 3,
+    currentEpisode: exampleEpisodeInfo1,
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "Jeffrey Gold",
+    cast: "Jackie Chan and Chris Tucker"
+)
 
 let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
 
+let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginning and the End", description: "Six months after leaving a life of crime behind, Jeff finds his life catching up to him. Will he return to crime or rise above it?", season: 1, episode: 1)
 
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(
