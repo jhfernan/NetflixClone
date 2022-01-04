@@ -21,6 +21,7 @@
 		FC7572EE277999C60093639F /* TopMoviePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7572ED277999C60093639F /* TopMoviePreviewView.swift */; };
 		FC9F4A0F278081EC00300019 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9F4A0E278081EC00300019 /* MovieDetailView.swift */; };
 		FC9F4A112780869900300019 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9F4A102780869900300019 /* Episode.swift */; };
+		FCA1AD1C2784004A003BE31E /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1AD1B2784004A003BE31E /* CustomTabSwitcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC7572ED277999C60093639F /* TopMoviePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreviewView.swift; sourceTree = "<group>"; };
 		FC9F4A0E278081EC00300019 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		FC9F4A102780869900300019 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		FCA1AD1B2784004A003BE31E /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				FC7572ED277999C60093639F /* TopMoviePreviewView.swift */,
 				FC61DA71277C5B4000E1C775 /* SmallVerticalButtonView.swift */,
 				FC61DA73277C652600E1C775 /* SymbolTextButtonView.swift */,
+				FCA1AD1B2784004A003BE31E /* CustomTabSwitcher.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				FC7572EC27795F000093639F /* HomeViewModel.swift in Sources */,
 				FC61DA72277C5B4100E1C775 /* SmallVerticalButtonView.swift in Sources */,
 				FC71FEFD277839760010C847 /* HomeView.swift in Sources */,
+				FCA1AD1C2784004A003BE31E /* CustomTabSwitcher.swift in Sources */,
 				FC9F4A112780869900300019 /* Episode.swift in Sources */,
 				FC7572E3277958850093639F /* Movie.swift in Sources */,
 				FC61DA74277C652600E1C775 /* SymbolTextButtonView.swift in Sources */,
