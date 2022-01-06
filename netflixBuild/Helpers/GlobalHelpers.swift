@@ -15,7 +15,8 @@ let exampleMovie1 = Movie(
     rating: "PG-13",
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
 )
 
 let exampleMovie2 = Movie(
@@ -27,7 +28,8 @@ let exampleMovie2 = Movie(
     rating: "R",
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: []
 )
 
 let exampleMovie3 = Movie(
@@ -39,7 +41,8 @@ let exampleMovie3 = Movie(
     rating: "TV-MA",
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: []
 )
 
 let exampleMovie4 = Movie(
@@ -51,7 +54,8 @@ let exampleMovie4 = Movie(
     rating: "TV-MA",
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: []
 )
 
 let exampleMovie5 = Movie(
@@ -65,7 +69,8 @@ let exampleMovie5 = Movie(
     currentEpisode: exampleEpisodeInfo1,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: []
 )
 
 let exampleMovie6 = Movie(
@@ -77,7 +82,8 @@ let exampleMovie6 = Movie(
     rating: "PG-13",
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: []
 )
 
 let exampleMovie7 = Movie(
@@ -90,10 +96,13 @@ let exampleMovie7 = Movie(
     currentEpisode: exampleEpisodeInfo1,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Jeffrey Gold",
-    cast: "Jackie Chan and Chris Tucker"
+    cast: "Jackie Chan and Chris Tucker",
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4]
 )
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
+var exampleMovies: [Movie] {
+    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
+}
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginning and the End", description: "Six months after leaving a life of crime behind, Jeff finds his life catching up to him. Will he return to crime or rise above it?", season: 1, episode: 1)
 
