@@ -106,6 +106,10 @@ var exampleMovies: [Movie] {
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginning and the End", description: "Six months after leaving a life of crime behind, Jeff finds his life catching up to him. Will he return to crime or rise above it?", season: 1, episode: 1)
 
+let exampleVideoURL = URL(string: "https://streamable.com/06ng6l")!
+let exampleImageURL = URL(string: "https://i.redd.it/8hel5lcnrt421.jpg")!
+
+
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(
         gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black]),
